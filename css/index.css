@@ -1,0 +1,40 @@
+@charset "utf-8";
+@import url(reset.css);
+@import url(animate.css);
+@import url("https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap");
+
+body, html, #wrap{height:100%}
+.row{max-width:1200px; margin:0 auto; padding:0 10px;  font-family:"Press Start 2P";}
+
+
+
+#header{background:rgba(0,0,0,0.6); position:fixed; width:100%; z-index:99999;}
+.header_cont{position:relative; height:120px; color:#fff}
+.header_cont h1{font-size:30px; line-height:120px; padding:0 20px; animation:fadeInDown 1s both 1;}
+.header_cont .open_gnb{display:none;}
+.header_cont .nav{position:absolute; top:50%; right:0; transform:translateY(-50%);}
+.header_cont .nav .depth1 > li{display:inline-block;}
+.header_cont .nav .depth1 > li > a{font-size:13px; padding:20px 20px; border-radius:5px; transition:all 0.5s;}
+.header_cont .nav .depth1 > li:hover > a{background:rgba(255,255,255,0.7); color:black; padding:50px 20px;}
+
+.outlayer{background:rgba(0,0,0,0.4); position:fixed; top:0; left:0; right:0; bottom:0; z-index:9999; display:none;}
+.outlayer.on{display:block;}
+
+.section_outer{height:100%;}
+.section_outer .section01{height:100%;}
+.section_outer .section01 .slide_outer{height:100%;}
+.section_outer .section01 .slide_inner{height:100%;}
+.section_outer .section01 .slide{height:100%; background-size:cover; background-position:center; background-repeat:no-repeat;}
+.section_outer .section01 .slide1{background-image:url(../images/section1_bg_03.gif)}
+.section_outer .section01 .slide2{background-image:url(../images/section1_bg_01.png)}
+.section_outer .section01 .slide3{background-image:url(../images/section1_bg_02.jpg)}
+
+.slide_outer{position:relative;}
+.slide_outer .marrow{font-size:60px; color:rgba(255,255,255,0.5); background:none; position:absolute; top:50%; transform:translateY(-50%);}
+.slide_outer .prev_arrow{left:5%; z-index:99;}
+.slide_outer .next_arrow{right:5%;}
+
+.slide_outer .slick-dots{position:absolute; bottom:20px; width:100%; text-align:center;}
+.slide_outer .slick-dots li{display:inline-block;}
+.slide_outer .slick-dots li button{width:15px; height:15px; border-radius:50%; background:rgba(0,0,0,0.5); padding:5px; text-indent:-9999px; overflow:hidden; margin:0 5px;}
+.slide_outer .slick-dots li.slick-active button{width:30px; border-radius:50px; background:rgba(255,255,255,0.5)}
