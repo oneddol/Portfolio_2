@@ -32,7 +32,7 @@
         }
     })
 
-    // $(".slide_inner").slick({
+    // $(".slide2_inner").slick({
     //     autoplay:true,
     //     dots:true,
     //     autoplaySpeed:5000,
@@ -41,6 +41,26 @@
     //     prevArrow:'<button class="prev_arrow marrow"><i class="fas fa-chevron-left"></i></button>',
     //     nextArrow:'<button class="next_arrow marrow"><i class="fas fa-chevron-right"></i></button>'
     // })
+    
+
+    $('.wheel').on('mousewheel',function(e, wh){
+        var index = $(this).index()
+        if(wh>0){
+            var prev = $(this).prev().offset().top;
+            $('.depth1 li').eq(index-1).addClass('on')
+            $('.depth1 li').eq(index-1).siblings().removeClass('on')
+            $('html,body').stop().animate({
+                scrollTop:prev
+            }, 800, 'linear')
+        }   else if (wh<0){
+            var next = $(this).next().offset().top;
+            $('.depth1 li').eq(index+1).addClass('on')
+            $('.depth1 li').eq(index+1).siblings().removeClass('on')
+            $('html,body').stop().animate({
+                scrollTop:next
+            }, 800, 'linear')
+        }
+    })
 
 
 })(jQuery)
