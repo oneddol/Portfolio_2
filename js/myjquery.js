@@ -32,15 +32,15 @@
         }
     })
 
-    $(".slide_inner").slick({
-        autoplay:true,
-        dots:true,
-        autoplaySpeed:1000,
-        speed:600,
-        fade:true,
-        prevArrow:'<button class="prev_arrow marrow"><i class="fas fa-chevron-left"></i></button>',
-        nextArrow:'<button class="next_arrow marrow"><i class="fas fa-chevron-right"></i></button>'
-    })
+    // $(".slide_inner").slick({
+    //     autoplay:true,
+    //     dots:true,
+    //     autoplaySpeed:5000,
+    //     speed:600,
+    //     fade:true,
+    //     prevArrow:'<button class="prev_arrow marrow"><i class="fas fa-chevron-left"></i></button>',
+    //     nextArrow:'<button class="next_arrow marrow"><i class="fas fa-chevron-right"></i></button>'
+    // })
 
 
 })(jQuery)
