@@ -33,10 +33,10 @@
             </p>
             <nav class="nav">
                 <ul class="depth1 cf">
-                    <li><a href="">About Me</a></li>
-                    <li><a href="">Portfolio</a></li>
-                    <li><a href="">Skills</a></li>
-                    <li><a href="">Contact Me</a></li>
+                    <li><a href="#info">About Me</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#contact">Contact Me</a></li>
                 </ul>
             </nav>
         </div>
@@ -45,67 +45,97 @@
     <div class="outlayer"></div>
 
     <div class="section_outer">
-        <section class="section01 info">
+        <section id="info" class="section01 info wheel">
             <div class="slide_outer">
                 <div class="slide_inner">
                     <div class="about_me row">
                         <div class="profile"><img src="images/unnamed.gif" alt=""></div>
                         <div class="intro">
                             <h1>Hello, I'm ONE_DDOL!</h1>
-                            <p>이 름 :<br>이 원 석</p>
-                            <p>연락처 :<br>010-3276-0889</p>
-                            <p>학력사항 :<br>동국대학교 경영정보학과 졸업</p>
-                            <p>경력사항 :<br> 홈플러스 온라인마케팅기획팀(2014)<br> 의료법인 삼광의료재단 인사팀(2015~2018)<br> 주식회사 삼광랩트리 인사팀(2019)</p>
+                            <table>
+                                <tr>
+                                    <td class="intro_title">이름</td>
+                                    <td>이원석</td>
+                                </tr>
+                                <tr>
+                                    <td class="intro_title">연락처</td>
+                                    <td>010-3276-0889</td>
+                                </tr>
+                                <tr>
+                                    <td class="intro_title">e-mail</td>
+                                    <td>wonseok88e@naver.com</td>
+                                </tr>
+                                <tr>
+                                    <td class="intro_title">학력사항</td>
+                                    <td>동국대학교 경영정보학과 졸업</td>
+                                </tr>
+                                <tr>
+                                    <td rowspan="3" class="intro_title">경력사항</td>
+                                    <td >홈플러스 온라인마케팅기획팀(2014)</td>
+                                </tr>
+                                <tr>
+                                    <td>의료법인 삼광의료재단 인사팀(2015~2018)</td>
+                                </tr>
+                                <tr>
+                                    <td>주식회사 삼광랩트리 인사팀(2019)</td>
+                                </tr>
+                            </table>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
-        <section class="section02 portfolio">
+        <section id="portfolio" class="section02 portfolio wheel">
             <div class="slide2_outer">
                 <div class="slide2_inner row">
                     <a href="#"><div class="portfolio_cont portfolio1"></div></a>
                     <a href="#"><div class="portfolio_cont portfolio2 on"></div></a>
                     <a href="#"><div class="portfolio_cont"></div></a>
                 </div>
+                <div class="prev_arrow"></div>
+                <div class="next_arrow"></div>
             </div>
         </section>
-        <section class="section03 skills">
-            <div class="point1">
-                <p>HTML5</p>
+        <section id="skills" class="section03 wheel">
+            <div class="row">
+                <h2>skills<i class="fas fa-space-shuttle"></i></h2>
+                <div class="point1">
+                    <p>80%</p>
+                    <p>HTML5</p>
+                </div>
+                <div class="point2">
+                    <p>70%</p>
+                    <p>CSS3</p>
+                </div>
+                <div class="point3">
+                    <p>50%</p>
+                    <p>Javascript</p>
+                </div>
+                <div class="point4">
+                    <p>60%</p>
+                    <p>jQuery</p>
+                </div>
+                <div class="point5">
+                    <p>30%</p>
+                    <p>React</p>
+                </div>
             </div>
-            <div class="point2">
-                <p>CSS3</p>
-            </div>
-            <div class="point3">
-                <p>Javascript</p>
-            </div>
-            <div class="point4">
-                <p>jQuery</p>
-            </div>
-            <div class="point5">
-                <p>React</p>
-            </div>
-            <div class="dot1"></div>
-            <div class="dot2"></div>
-            <div class="dot3"></div>
-            <div class="dot4"></div>
-            <div class="dot5"></div>
         </section>
-        <section class="section04">
+        <section id="contact" class="section04 wheel">
             <div class="contact cf row">
                 <div class="contact_me">
                     <form action="" method="post">
+                        <h3>Contact Me</h3>
                         <dl>
-                            <dt>성명</dt>
+                            <dt>Name</dt>
                             <dd><input type="text" class="text_input"></dd>
-                            <dt>연락처</dt>
+                            <dt>Phone Number</dt>
                             <dd><input type="text" class="text_input"></dd>
-                            <dt>이메일 주소</dt>
+                            <dt>e-mail Address</dt>
                             <dd><input type="text" class="text_input"></dd>
-                            <dt>보내는 말</dt>
+                            <dt>Message</dt>
                             <dd>
-                                <textarea name="" id="" placeholder="내용을 입력해주세요." style="width:550px; height:200px"></textarea>
+                                <textarea name="" id="" placeholder="Type a message, please.."" style="width:95%; height:200px; font-family:'Press Start 2P'; padding:10px 0 0 10px;"></textarea>
                             </dd>
                         </dl>
                         <div class="button">
