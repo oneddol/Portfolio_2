@@ -85,17 +85,21 @@
                 </div>
             </div>
         </section>
-        <section id="portfolio" class="section02 portfolio wheel">
+
+        <section id="portfolio" class="section02 wheel">
             <div class="slide2_outer">
                 <div class="slide2_inner row">
-                    <a href="#"><div class="portfolio_cont portfolio1"></div></a>
-                    <a href="#"><div class="portfolio_cont portfolio2 on"></div></a>
-                    <a href="#"><div class="portfolio_cont"></div></a>
+                    <ul class="cf">
+                        <li class="off"><a href=""><p>Portfolio3</p><img src="images/Plane_01.png" alt=""></a></li>
+                        <li class="on"><a href=""><p>Portfolio1</p><img src="images/pizza.jpg" alt=""></a></li>
+                        <li class="off"><a href=""><p>Portfolio2</p><img src="images/Plane_01_black.png" alt=""></a></li>
+                    </ul>
                 </div>
-                <div class="prev_arrow"></div>
-                <div class="next_arrow"></div>
+                <div class="prev arrow"><i class="fas fa-angle-left"></i></div>
+                <div class="next arrow"><i class="fas fa-angle-right"></i></div>
             </div>
         </section>
+
         <section id="skills" class="section03 wheel">
             <div class="row">
                 <h2>skills<i class="fas fa-space-shuttle"></i></h2>
@@ -121,11 +125,12 @@
                 </div>
             </div>
         </section>
+
         <section id="contact" class="section04 wheel">
             <div class="contact cf row">
                 <div class="contact_me">
                     <form action="" method="post">
-                        <h3>Contact Me</h3>
+                        <h3><i class="fas fa-crow"></i> Contact Me <i class="fas fa-dove"></i> </h3>
                         <dl>
                             <dt>Name</dt>
                             <dd><input type="text" class="text_input"></dd>
@@ -144,7 +149,7 @@
                         </div>
                     </form>
                 </div>
-                <div class="private row">
+                <div class="private">
                     <h3>개인정보 처리약관</h3>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi quasi quisquam velit at, soluta quaerat quidem, in minima cupiditate, tenetur libero nesciunt aliquid praesentium. Dolore maxime et cumque beatae modi.
                     At, perferendis exercitationem! Cum commodi iste earum nobis quod! At pariatur dignissimos culpa. Cupiditate fuga reiciendis debitis beatae tempore. Perspiciatis labore nihil asperiores itaque id nam maxime sit quaerat pariatur!
@@ -169,6 +174,7 @@
     <!-- <script src="js/jquery-migrate-1.4.1.js"></script> -->
     <script src="js/slick.min.js"></script>
     <script src="js/prefixfree.min.js"></script>
+    <script src="js/jquery.mousewheel.min.js"></script>
     <!-- <script src="js/myScript.js"></script> -->
     <script src="js/myjquery.js"></script>
 </body>

@@ -42,6 +42,7 @@
     //     nextArrow:'<button class="next_arrow marrow"><i class="fas fa-chevron-right"></i></button>'
     // })
     
+    //섹션에 마우스 휠 이벤트 연결 mousewheel 연결 필요
 
     $('.wheel').on('mousewheel',function(e, wh){
         var index = $(this).index()

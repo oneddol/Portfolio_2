@@ -41,30 +41,25 @@ background:rgba(0,0,0,0.8)}
 /* section02 */
 .section02{height:100%; }
 .section02 .slide2_outer{background-image:url(../images/section1_bg_01.png); height:100%; background-size:cover; background-position:center; background-repeat:no-repeat;}
-.section02 .slide2_outer .slide2_inner{height:100%}
-.section02 .slide2_outer .slide2_inner .portfolio_cont{
-    float:left; width:30%; height:80%; margin:150px 20px 0;
-    background:rgba(0,0,0,0.8)
-}
-.section02 .slide2_outer .slide2_inner .portfolio_cont > a{height:100%}
-.section02 .slide2_outer .slide2_inner .portfolio2{
-    background-image:url(../images/portfolio1.png); background-size:cover; background-position:center; background-repeat:no-repeat;
-}
-.section02 .slide2_outer .slide2_inner .on{
-    height:85%;  margin:130px 10px 0;
-}
+
+.section02 .slide2_inner{position:relative; height:100%; padding-top:150px;}
+.section02 .slide2_inner ul {position:absolute; top:50%; transform:translateY(-50%);    }
+.section02 .slide2_inner ul > li{float:left; width:30%; text-align:center; padding:20px 20px;}
+.section02 .slide2_inner ul > li  p{color:white; padding:20px 0;}
+.section02 .slide2_inner .on{width:37%}
+.section02 .slide2_inner .off{opacity:0.4}
+
+
 .slide2_outer{position:relative;}
-.slide2_outer .marrow{font-size:60px; color:rgba(255,255,255,0.5); background:none; position:absolute; top:50%; transform:translateY(-50%);}
-.slide2_outer .prev_arrow{left:5%; z-index:99;}
-.slide2_outer .next_arrow{right:5%;}
-
-.slide2_outer .slick-dots{position:absolute; bottom:20px; width:100%; text-align:center;}
-.slide2_outer .slick-dots li{display:inline-block;}
-.slide2_outer .slick-dots li button{width:15px; height:15px; border-radius:50%; background:rgba(0,0,0,0.5); padding:5px; text-indent:-9999px; overflow:hidden; margin:0 5px;}
-.slide2_outer .slick-dots li.slick-active button{width:30px; border-radius:50px; background:rgba(255,255,255,0.5)}
+.slide2_outer .arrow{font-size:50px; 
+    color:rgba(255,255,255,0.6);
+    position:absolute; top:50%; 
+    transform:translateY(-50%)}
+.slide2_outer .prev{left:5%; z-index:99;}
+.slide2_outer .next{right:5%;}
 
 
-
+/* section03 */
 .section03{background-image:url(../images/images4.jpg); height:100%; background-size:cover; background-position:center; background-repeat:no-repeat; position:relative}
 .section03 h2{color:white; position:absolute; top:10%; font-size:35px; animation:sec03_h 10s linear infinite;}
 @keyframes sec03_h{
@@ -138,16 +133,23 @@ background:rgba(0,0,0,0.8)}
 .section03 div > p{color:white; position:absolute; bottom:20%; left:50%; transform:translateX(-50%)}
 
 
-
+/* section04 */
 .section04{background-image:url(../images/section1_bg_03.gif); height:100%; background-size:cover; background-position:center; background-repeat:no-repeat; position:relative}
 .section04 .contact{position:absolute; top:50%; left:50%; transform:translate(-50%, -50%) }
-.section04 .contact_me{color:white; float:left; width:48%; background:rgba(0,0,0,0.8); font-size:20px; height:100%; padding:50px 20px;  text-align:center;}
-.section04 .contact_me h3{font-size:30px; padding:15px 0; text-align:center; color:white}
+.section04 .contact_me{color:white; float:left; width:48%; background:rgba(0,0,0,0.5); font-size:20px; height:100%;  text-align:center; padding-bottom:15px; transition:all 1s}
+.section04 .contact_me h3{font-size:30px; padding:20px 0; text-align:center; background:rgb(196, 192, 192); border:3px double black;}
 .section04 .contact_me dt{padding:15px 0 15px 15px; text-align:left;}
-.section04 .contact_me .text_input{height:50px; width:95%; font-size:30px}
+.section04 .contact_me .text_input{height:50px; width:95%; font-size:30px; font-family:"Press Start 2P";} 
 .section04 .contact_me .button{padding-top:20px;}
-.section04 .contact_me .button > input{width:45%; height:45px; font-family:"Press Start 2P"; border-radius:3px;}
-.section04 .private{color:white; width:48%; float:right; background:rgba(0,0,0,0.8); padding:40px 20px;}
-.section04 .private h3{font-size:30px; padding-bottom:20px; text-align:center;}
+.section04 .contact_me .button > input{width:45%; height:45px; font-family:"Press Start 2P"; background:rgb(196, 192, 192);}
+.section04 .contact_me .button > input:nth-child(1):hover{background:rgb(97, 95, 95); color:white}
+.section04 .contact_me .button > input:nth-child(2):hover{background:rgb(97, 95, 95); color:red}
+.section04 .contact_me:hover{background:rgba(0,0,0,0.8)}
+.section04 .contact_me:hover h3{background:rgba(255,255,255,0.8); color:black}
 
+.section04 .private{color:white; width:48%; float:right; background:rgba(0,0,0,0.5); padding-bottom:10px; transition:all 1s; height:90%}
+.section04 .private h3{font-size:35px; text-align:center; padding:15px 0; background:rgb(196, 192, 192); border:3px double black; font-weight:bold}
+.section04 .private p{padding:30px 0 5px 5px; text-overflow:hidden}
+.section04 .private:hover h3{background:rgba(255,255,255,0.8); color:black}
+.section04 .private:hover{background:rgba(0,0,0,0.8)}
 
