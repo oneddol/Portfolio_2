@@ -62,6 +62,25 @@
             }, 800, 'linear')
         }
     })
+    
+    $('.up').on('click', function(){
+        $('.selectBox li:last-child').animate({
+            opacity:0
+        },100, function(){
+            $(this).prependTo('.selectBox').css({
+                opacity:1
+            })
+        })
+    })
+    $('.down').on('click', function(){
+        $('.selectBox li:first-child').animate({
+            opacity:0
+        },100, function(){
+            $(this).appendTo('.selectBox').css({
+                opacity:1
+            })
+        })
+    })
 
 
 })(jQuery)
